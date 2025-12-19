@@ -1,0 +1,51 @@
+﻿<div class="modal fade" id="modalUpdateSuperhero" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header alert alert-dark">
+                <h5 class="modal-title"><i class="fas fa-edit fa-fw me-1 "></i>Editar Super-herói</h5>
+                <button type="button" class="btn-close btn-close-white" data-dismiss="modal" v-on:click="clearFieldsChangeSuperhero"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="mb-3">
+                    <label class="form-label">Nome real do herói <span class="text-danger">*</span></label>
+                    <div class="row row-space-10">
+                        <div class="col-12" v-bind:class="classesErrorsValidationSuperheroEdit">
+                            <input type="text" class="form-control" placeholder="Nome" v-model="editionSuperhero.name" minLength="2" maxlength="120" required />
+                            <div class="invalid-feedback">
+                                {{messageErrorValidationSuperheroEdit.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nome do herói (único) <span class="text-danger">*</span></label>
+                    <div class="row row-space-10">
+                        <div class="col-12" v-bind:class="classesErrorsValidationSuperheroEdit">
+                            <input type="text" class="form-control" placeholder="Descrição" v-model="editionSuperhero.heroName" minLength="2" maxlength="120" required />
+                            <div class="invalid-feedback">
+                                {{messageErrorValidationSuperheroEdit.heroName}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Status</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="statusCheck"
+                               v-model="editionSuperhero.status">
+                        <label class="form-check-label" for="statusCheck">Ativo</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer bg-navy">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#modalUpdateSuperhero" v-on:click="clearFieldsChangeSuperhero">Fechar</button>
+                <button type="submit" class="btn btn-primary" v-on:click="saveChangeSuperhero">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

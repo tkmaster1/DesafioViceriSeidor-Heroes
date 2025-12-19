@@ -37,5 +37,11 @@ public class SuperheroesApplication : ISuperheroesApplication
         return await BaseServiceExtensions.ToResponse<HeroDTO>(_base, request, ct);
     }
 
+    public async Task<ResponseSuccess<object>> RemoveSuperhero(int code, CancellationToken ct = default)
+    {
+        var request = _base.Delete($"Heroes/deleteHero/{code}");
+        return await BaseServiceExtensions.ToResponse<object>(_base, request, ct);
+    }
+
     #endregion
 }

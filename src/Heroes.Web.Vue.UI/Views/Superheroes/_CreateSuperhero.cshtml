@@ -1,0 +1,44 @@
+﻿<div id="mdCreateSuperhero">
+    <div class="modal fade" id="modalCreateSuperhero" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header alert alert-dark">
+                    <h5 class="modal-title"><i class="fas fa-bars fa-fw me-1"></i>&nbsp;Cadastrar Super-herói</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" v-on:click="clearFieldsSuperhero"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nome real do herói <span class="text-danger">*</span></label>
+                        <div class="row row-space-10">
+                            <div class="col-12" v-bind:class="classesErrorsValidation">
+                                <input type="text" class="form-control" placeholder="Nome" v-model="newSuperhero.name" minLength="2" maxlength="120" required />
+                                <div class="invalid-feedback">
+                                    {{messageErrorValidationSuperhero.name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nome do herói (único) <span class="text-danger">*</span></label>
+                        <div class="row row-space-10">
+                            <div class="col-12" v-bind:class="classesErrorsValidation">
+                                <input type="text" class="form-control" placeholder="Descrição" v-model="newSuperhero.heroName" minLength="2" maxlength="120" required />
+                                <div class="invalid-feedback">
+                                    {{messageErrorValidationSuperhero.heroName}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-navy">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalCreateSuperhero" v-on:click="clearFieldsSuperhero">Fechar</button>
+                    <button type="submit" class="btn btn-success" v-on:click="saveNewSuperhero">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <loading v-model:active="isLoading" :is-full-page="fullPage" color="#530daf" />
+</div>

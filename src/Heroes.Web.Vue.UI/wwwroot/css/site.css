@@ -1,0 +1,65 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Defines three columns: left (1fr), center (2fr), right (1fr) */
+    gap: 20px; /* Optional: Adds space between columns */
+    padding: 20px; /* Optional: Adds padding around the footer content */
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+}
+
+.footer-left {
+    /* Specific styles for the left column if needed */
+    text-align: left;
+}
+
+.footer-center {
+    /* Specific styles for the center column if needed */
+    text-align: center;
+}
+
+.footer-right {
+    /* Specific styles for the right column if needed */
+    text-align: right;
+}
+
+
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/

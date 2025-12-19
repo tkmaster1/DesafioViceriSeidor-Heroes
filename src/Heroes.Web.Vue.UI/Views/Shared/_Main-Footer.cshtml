@@ -1,0 +1,18 @@
+﻿@inject IConfiguration _config
+
+<footer class="main-footer bg-navy">
+    <div class="footer-left">
+        <p>
+            <strong>&copy; @DateTime.Now.Year @_config["AppSettings:Application:Enterprise"].</strong>
+        </p>
+    </div>
+    <div class="footer-center">
+        <p>
+            <strong>@_config["AppSettings:Application:TypeProject"]: @_config["AppSettings:Application:Project"]</strong>
+            &nbsp;
+        </p>
+    </div>
+    <div class="footer-right">
+        <p><b>Versão:</b>&nbsp;@_config["AppSettings:Application:Version"]</p>
+    </div>
+</footer>

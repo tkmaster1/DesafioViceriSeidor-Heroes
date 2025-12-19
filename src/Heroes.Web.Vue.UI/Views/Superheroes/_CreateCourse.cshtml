@@ -1,0 +1,44 @@
+﻿<div id="mdCreateCourse">
+    <div class="modal fade" id="modalCreateCourse" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header alert alert-dark">
+                    <h5 class="modal-title"><i class="fas fa-bars fa-fw me-1"></i>&nbsp;Cadastrar Curso</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" v-on:click="clearFieldsCourse"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nome do Curso <span class="text-danger">*</span></label>
+                        <div class="row row-space-10">
+                            <div class="col-12" v-bind:class="classesErrorsValidation">
+                                <input type="text" class="form-control" placeholder="Nome" v-model="newCourse.name" minLength="2" maxlength="256" required />
+                                <div class="invalid-feedback">
+                                    {{messageErrorValidationCourse.name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descrição do Curso <span class="text-danger">*</span></label>
+                        <div class="row row-space-10">
+                            <div class="col-12" v-bind:class="classesErrorsValidation">
+                                <input type="text" class="form-control" placeholder="Descrição" v-model="newCourse.description" minLength="2" maxlength="1000" required />
+                                <div class="invalid-feedback">
+                                    {{messageErrorValidationCourse.description}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-navy">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalCreateCourse" v-on:click="clearFieldsCourse">Fechar</button>
+                    <button type="submit" class="btn btn-success" v-on:click="saveNewCourse">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <loading v-model:active="isLoading" :is-full-page="fullPage" color="#530daf" />
+</div>

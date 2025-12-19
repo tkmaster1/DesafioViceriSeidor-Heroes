@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{19616674-7D97-41C5-92EA-DAE8CCDBD225}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{D465A758-F09E-4815-B7BE-2912F480521E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{622D5E3E-DEF7-407B-8ED5-D200C412225F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{39992BCC-BBBA-4AD5-87FF-C819702DB7A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - DataBases", "3.2 - DataBases", "{BFB36D1F-5CDA-495F-9849-BD17665215A5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBHeroesCatalog", "src\Sql\DBHeroesCatalog\DBHeroesCatalog.sqlproj", "{C26839B2-5F6C-483B-8335-569FDF80BE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Core.Domain", "src\Heroes.Core.Domain\Heroes.Core.Domain.csproj", "{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Core.Data", "src\Heroes.Core.Data\Heroes.Core.Data.csproj", "{EA012990-1B63-4313-AFF0-FE3C83811D3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Utilities", "4 - Utilities", "{D15B5554-E400-4DE4-ABB5-7B8A39E006CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Common.Util", "src\Heroes.Common.Util\Heroes.Common.Util.csproj", "{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Core.Application", "src\Heroes.Core.Application\Heroes.Core.Application.csproj", "{4F1E2C0F-2F62-4033-831E-A0B3A2107E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Web.Vue.UI", "src\Heroes.Web.Vue.UI\Heroes.Web.Vue.UI.csproj", "{12E6D490-0B23-46E2-AE2F-6C086D3E1056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.Core.WebApi", "src\Heroes.Core.WebApi\Heroes.Core.WebApi.csproj", "{75648F9C-DD52-4CA0-89C2-1F0CD2B41498}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA012990-1B63-4313-AFF0-FE3C83811D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA012990-1B63-4313-AFF0-FE3C83811D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA012990-1B63-4313-AFF0-FE3C83811D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA012990-1B63-4313-AFF0-FE3C83811D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1E2C0F-2F62-4033-831E-A0B3A2107E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1E2C0F-2F62-4033-831E-A0B3A2107E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1E2C0F-2F62-4033-831E-A0B3A2107E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1E2C0F-2F62-4033-831E-A0B3A2107E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E6D490-0B23-46E2-AE2F-6C086D3E1056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E6D490-0B23-46E2-AE2F-6C086D3E1056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E6D490-0B23-46E2-AE2F-6C086D3E1056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E6D490-0B23-46E2-AE2F-6C086D3E1056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75648F9C-DD52-4CA0-89C2-1F0CD2B41498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75648F9C-DD52-4CA0-89C2-1F0CD2B41498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75648F9C-DD52-4CA0-89C2-1F0CD2B41498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75648F9C-DD52-4CA0-89C2-1F0CD2B41498}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39992BCC-BBBA-4AD5-87FF-C819702DB7A2} = {622D5E3E-DEF7-407B-8ED5-D200C412225F}
+		{BFB36D1F-5CDA-495F-9849-BD17665215A5} = {622D5E3E-DEF7-407B-8ED5-D200C412225F}
+		{C26839B2-5F6C-483B-8335-569FDF80BE9B} = {BFB36D1F-5CDA-495F-9849-BD17665215A5}
+		{6D8DCF3A-53A4-47FA-BC75-93F807C3C6BC} = {D465A758-F09E-4815-B7BE-2912F480521E}
+		{EA012990-1B63-4313-AFF0-FE3C83811D3B} = {39992BCC-BBBA-4AD5-87FF-C819702DB7A2}
+		{0872274D-E8B9-4F19-8E3B-D5762A6D9E7B} = {D15B5554-E400-4DE4-ABB5-7B8A39E006CC}
+		{4F1E2C0F-2F62-4033-831E-A0B3A2107E69} = {19616674-7D97-41C5-92EA-DAE8CCDBD225}
+		{12E6D490-0B23-46E2-AE2F-6C086D3E1056} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{75648F9C-DD52-4CA0-89C2-1F0CD2B41498} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BE93FE3-0896-4F5C-AB1C-E31D43662436}
+	EndGlobalSection
+EndGlobal

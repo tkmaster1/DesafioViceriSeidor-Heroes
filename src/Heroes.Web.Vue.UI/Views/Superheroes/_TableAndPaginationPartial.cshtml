@@ -1,0 +1,10 @@
+﻿<div>
+    <tablesuperheroes :superheroes-Response="superheroesResponse"
+                      v-on:exibir-modal-editar="displayModalChangeSuperheroes"
+                      v-on:exibir-modal-excluir="displayModalDeleteSuperheroes" />
+</div>
+<div>
+
+    <tablesuperheroespagination :superheroes-Response-Pagination="superheroesResponsePagination"
+                                v-on:list-Superheroes="listSuperheroes" />
+</div>

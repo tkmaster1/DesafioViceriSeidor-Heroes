@@ -1,55 +1,216 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
+!**/packages/build/
+#
+# .NET Core
+# =========================
+# Backup & report files from converting an old project file to a newer
+# Build Results of an ATL Project
+# Build results
+# CVS - Source Control
+# Click-Once directory
+# DocProject is a documentation generator add-in
+# DotCover is a Code Coverage Tool
+# Download this file using PowerShell v3 under Windows with the following comand:
+# EPiServer Site file (VPP)
+# End of core ignore list, below put you custom 'per project' settings (patterns or path)
+# Folder config file
+# Guidance Automation Toolkit
+# Installshield output folder
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw/ -OutFile .gitignore
+# MSTest test Results
+# Mac desktop service store files
+# NCrunch
+# NuGet Packages
+# OS generated files #
+# Others
+# Output folder used by Webpack or other FE stuff
+# Publish Web Output
+# RIA/Silverlight projects
+# ReSharper is a .NET coding add-in
+# Recycle Bin used on file shares
+# Remainings from resolving conflicts in Source Control
+# Rider
+# SASS Compiler cache
+# SQL Server files
+# SpecFlow specific
+# TeamCity is a build add-in
+# Temp files when opening LibreOffice on ubuntu
+# The following command works for downloading when using Git for Windows:
+# The packages folder can be ignored because of Package Restore
+# Uncomment if necessary however generally it will be regenerated when needed
+# Uncomment if you have tasks that create the project's static files in wwwroot
+# User-specific files
+# User-specific files (MonoDevelop/Xamarin Studio)
+# VS 2015+
+# Visual C++ cache files
+# Visual Studio 2014 CTP
+# Visual Studio 2017 auto generated files
+# Visual Studio Code
+# Visual Studio profiler
+# Visual Studio temp something
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+# Windows Azure Build Output
+# Windows Store app package directory
+# Windows detritus
+# Windows image file caches
+# build folder is nowadays used for build scripts and should not be ignored
+# curl -LOf http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+# dotnet stuff
+# except build/, which is used as an MSBuild target.
+# or wget:
+# svn
+# vim
+# wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+#!**/packages/repositories.config
+#####
 *.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+#LightSwitch generated files
+#build/
+#wwwroot/
+$RECYCLE.BIN/
+**.v16/
+**/*.sln.ide
+**/*.suo
+**/App_Data/*.ldf
+**/App_Data/*.mdf
+**/App_Data/*.sdf
+**/CVS/
+**/node_modules/*
+**/packages/*
+**/v16
+**/wwwroot/*
+*.Cache
+*.Publish.xml
+*.Specs_*.html
+*.[Pp]ublish.xml
+*.[Rr]e[Ss]harper
+*.aps
+*.build.csdef
+*.cache
+*.cachefile
+*.dbmdl
+*.dotCover
+*.dtbcache.v2
+*.feature.cs
+*.feature.xlsx.*
+*.force
+*.gpState
+*.ilk
+*.iobj
+*.ipdb
+*.jfm
+*.log
+*.meta
+*.ncb
+*.ncrunch*
+*.nupkg
+*.obj
+*.opensdf
+*.orig
+*.pch
 *.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+*.pfx
+*.pgc
+*.pgd
+*.pidb
+*.psess
+*.publishsettings
+*.rsp
+*.rsuser
+*.sbr
+*.scc
+*.sdf
+*.sln.docstates
+*.suo
+*.svclog
+*.swo
+*.swp
+*.tlb
+*.tlh
+*.tli
+*.tlog
+*.tmp
+*.tmp_proj
+*.txt
+*.txt~
+*.user
+*.userosscache
+*.userprefs
+*.vc.db
+*.vc.vc.opendb
+*.vsp
+*.vspscc
+*.vspx
+*.vssscc
+*_h.h
+*_i.c
+*_p.c
+*_wpftmp.csproj
+*~
+.*crunch*.local.xml
+.DS_Store
+.DS_Store*
+.builds
+.idea/
+.sass-cache
+.svn
+.vs/
+.vs/**
+.vscode/
+.~lock.*
+/src/Sql/DBIdentityEnsino/DBIdentityEnsino.jfm
+AppData/
+AppPackages/
+Backup*/
+ClientBin/
+Desktop.ini
+DocProject/Help/*.HxC
+DocProject/Help/*.HxT
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+DocProject/buildhelp/
+GeneratedArtifacts/
+Generated\ Files/
+Generated_Code/
+Icon?
+ModelManifest.xml
+Thumbs.db
+UpgradeLog*.XML
+UpgradeLog*.htm
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Bb]uild[Ll]og.*
+[Dd]ebug/
+[Dd]ebugPS/
+[Dd]ebugPublic/
+[Ee]xpress/
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleasePS/
+[Rr]eleases/
+[Ss]tyle[Cc]op.*
+[Tt]est[Rr]esult*/
+[Ww][Ii][Nn]32/
+_Pvt_Extensions/
+_ReSharper*/
+_TeamCity*
+_UpgradeReport_Files/
+artifacts
+bld/
+csx
+dlldata.c
+ehthumbs.db
+ipch/
+modulesbin/
+project.fragment.lock.json
+project.lock.json
+publish/
+tempbin/
+x64/
+x86/
+~$*

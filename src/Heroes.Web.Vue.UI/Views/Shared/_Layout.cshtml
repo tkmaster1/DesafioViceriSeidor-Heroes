@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] | Portal Super-heróis</title>
+
+    @RenderSection("MetaTag", required: false)
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!-- Font Awesome -->
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css">
+
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="~/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="~/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+
+    <link rel="stylesheet" href="~/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="~/vue/lib/overlay-loading/vue-loading-overlay.css" />
+
+    <link rel="stylesheet" href="~/css/app.min.css" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <link rel="stylesheet" href="~/vue/lib/overlay-loading/vue-loading-overlay.css" />
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/plugins/summernote/summernote-bs4.min.css">
+
+    @RenderSection("Styles", required: false)
+</head>
+<body class="hold-transition layout-top-nav text-sm">
+    @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
+
+    @{
+        ViewData["Title"] = "JavaScript";
+
+        var requestToken = Antiforgery.GetAndStoreTokens(Context).RequestToken;
+    }
+    <input id="RequestVerificationToken" type="hidden" value="@requestToken" />
+
+    <div class="wrapper">
+        <partial name="_Header" />
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <section class="main-content clear-fix">
+                <div id="app">
+                    @RenderBody()
+                </div>
+            </section>
+        </div>
+
+        <!-- /.control-sidebar -->
+        @RenderSection("OutterAppContainerContent", required: false)
+
+        <partial name="_Main-Footer" />
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+
+    <script>
+        window.paceOptions = {
+            ajax: { ignoreURLs: ['mainHub', '__browserLink', 'browserLinkSignalR'], trackWebSockets: false }
+        };
+    </script>
+
+    <script src="~/vue/lib/vue-3.3.7.js"></script>
+    @*<script src="~/vue/lib/vue-prod-v3.2.47.js"></script>*@
+
+    <script src="~/vue/lib/overlay-loading/vue-loading-overlay.js"></script>
+    <script src="~/vue/util/axios.min.js"></script>
+    <script src="~/vue/util/fetchdata.js"></script>
+    <script src="~/vue/lib/maska/maska-v1.5.2.js"></script>
+
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+
+    <!-- jQuery UI 1.11.4 -->
+    <script src="~/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+
+    <!-- ChartJS -->
+    <script src="~/plugins/chart.js/Chart.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="~/plugins/sparklines/sparkline.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="~/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- jQuery Knob Chart -->
+    <script src="~/plugins/jquery-knob/jquery.knob.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="~/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+
+    <!-- InputMask -->
+    <script src="~/plugins/moment/moment.min.js"></script>
+    <script src="~/plugins/moment/locale/pt-br.js"></script>
+    <script src="~/plugins/inputmask/jquery.inputmask.min.js"></script>
+
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/datetime.js"></script>
+
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
+
+    <!-- bootstrap color picker -->
+    <script src="~/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script src="~/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+    <!-- Summernote -->
+    <script src="~/plugins/summernote/summernote-bs4.min.js"></script>
+
+    <!-- overlayScrollbars -->
+    <script src="~/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="~/dist/js/adminlte.js"></script>
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        })
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
